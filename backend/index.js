@@ -18,7 +18,7 @@ const JWT_SECRET = process.env.JWT_SECRET;
 
 app.use(cors({
     credentials: true, 
-    origin: 'https://yapyapblog.netlify.app'}));
+    origin: 'http://localhost:3000'}));
 app.use(express.json());
 app.use(cookieParser());
 app.use('/uploads', express.static(__dirname + '/uploads'));
